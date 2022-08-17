@@ -5,6 +5,8 @@
 3. Clear the deposit field after getting the value.
 4. Get the previous deposit total.
 5. Calculate new deposit total and set the value to the deposit total.
+6. Get current balance total.
+7. Calculate the new balance and set it to the balance total element.
 */ 
 
 
@@ -45,6 +47,17 @@ const newDepositTotal =  previousDepositTotal + newDepositAmount;
 
 depositTotalElement.innerText = newDepositTotal;
 
+// Step:6****************
+
+const balanceTotalElement = document.getElementById('balance-total');
+
+const previousBalanceTotalString = balanceTotalElement.innerText;
+const previousBalanceTotalAmount = parseFloat(previousBalanceTotalString);
+
+// Step:7*************
+
+const newBalanceTotal = previousBalanceTotalAmount + newDepositAmount;
+balanceTotalElement.innerText = newBalanceTotal;
 
 
 })
