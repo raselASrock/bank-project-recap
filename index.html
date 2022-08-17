@@ -34,14 +34,21 @@
         </section>
         <!-- Deposit and Withdraw Section  -->
         <section class="mt-5">
-            <div class="grid grid-cols-2 gap-4 w-3/4  mx-auto text-white font-semibold">
+            <div class="grid grid-cols-2 gap-4 w-3/4  mx-auto  font-bold">
                 <div class="bg-green-400 rounded-xl p-5 text-center">
-                    <h3 class="text-3xl my-5">Your Deposit</h3>
-                <input type="text" placeholder="$ Your Deposit Amount">
+                    <h3 class="text-4xl text-white my-5">Your Deposit</h3>
+                <input class='p-3 rounded-lg' type="text" placeholder="$ Your Deposit Amount" id="deposit-field">
+                <button class="block btn-deposit bg-blue-500 text-white px-4 py-2 mt-5 rounded-lg mx-auto " id="btn-deposit">Deposit Now</button>
+                </div>
+                <div class="bg-red-400 rounded-xl p-5 text-center">
+                    <h3 class="text-4xl text-white my-5">Your Withdraw</h3>
+                <input class='p-3 rounded-lg' type="text" placeholder="$ Your Withdraw Amount">
+                <button class="block btn-deposit bg-blue-500 text-white px-4 py-2 mt-5 rounded-lg mx-auto " id="btn-withdeaw">Withdraw Now</button>
                 </div>
             </div>
         </section>
     </main>
+    <script src="js/deposit.js"></script>
 </body>
 
 </html>
