@@ -23,7 +23,9 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
 // Step 2************************
 
     const depositField = document.getElementById('deposit-field');
+    
     const newDepositAmountString = depositField.value ;
+    
     const newDepositAmount = parseFloat(newDepositAmountString);
     // console.log(newDepositAmount)
 
@@ -38,7 +40,9 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
 
 
 const depositTotalElement = document.getElementById('deposit-total');
+
 const previousDepositTotalString = depositTotalElement.innerText;
+
 const previousDepositTotal = parseFloat(previousDepositTotalString);
 
 // Step: 5******************

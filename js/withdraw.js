@@ -4,6 +4,8 @@
 3. Clear the withdraw input field
 4. Get previous Withdraw total
 5. Calculate Total. and set it to the withdraw total element
+6. Get previous balance
+7. Calculate total balance and set it to the  balance total element
 
 */ 
 
@@ -26,10 +28,28 @@ document.getElementById('btn-withdeaw').addEventListener('click', function(){
     const withdrawTotalElement = document.getElementById('withdraw-total');
 
     const previousWithdrawTotalString = withdrawTotalElement.innerText;
-    const previousWithdrawTptal = parseFloat(previousWithdrawTotalString);
+    const previousWithdrawTotal = parseFloat(previousWithdrawTotalString);
 
     // Step: 5*********************
 
+    const newWithdrawTotal = previousWithdrawTotal + newWithdrawAmount ;
+
+    withdrawTotalElement.innerText = newWithdrawTotal;
+
+    // Step: 6**********************
+
+    const balanceElement = document.getElementById('balance-total');
+
+    const previousBalanceTotalString = balanceElement.innerText;
+
+    const previousBalanceTotal = parseFloat(previousBalanceTotalString);
+
+    // Step:7*******************
+
+    const newBalanceTotal = previousBalanceTotal - newWithdrawAmount;
     
+    balanceElement.innerText  = newBalanceTotal;
+
+
 
 })
